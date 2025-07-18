@@ -40,7 +40,7 @@ module Fastlane
                                 UI.user_error!("Could not find app build.gradle file") unless File.exist?(value) || Helper.test?
                               end),
           FastlaneCore::ConfigItem.new(key: :version_code_key,
-                                  env_name: "FL_ANDROID_SET_VERSION_CODE_VERSION_CODE_KEY",
+                                  env_name: "FL_ANDROID_GET_VERSION_CODE_VERSION_CODE_KEY",
                                description: "(optional) Set specific Version Code Key",
                                   optional: true,
                                       type: String,
